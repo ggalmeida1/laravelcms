@@ -13,9 +13,12 @@
         "jeroennoten/laravel-adminlte": "^3.8",
         "laravel/framework": "^6.20.26",
         "laravel/tinker": "^2.5",
-        "lucascudo/laravel-pt-br-localization": "^1.1"
+        "lucascudo/laravel-pt-br-localization": "^1.1",
+      "ext-json": "*"
     },
     "require-dev": {
+        "roave/security-advisories": "dev-latest"
+        ,
         "facade/ignition": "^1.16.15",
         "fakerphp/faker": "^1.9.1",
         "mockery/mockery": "^1.0",

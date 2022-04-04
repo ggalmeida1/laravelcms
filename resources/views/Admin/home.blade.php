@@ -7,8 +7,19 @@
 
 
 @section('content_header')
-
-    <h1>Dashboard</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <h1>Dashboard</h1>
+        </div>
+        <div class="col-md-6">
+            <form method="get">
+                <select onChange="this.form.submit()" class="form-control"name="interval" class="float-md-right">
+                    <option {{$dateInterval===30?'selected="selected"':''}} value="30">Últimos 30 dias</option>
+                    <option {{$dateInterval===60?'selected="selected"':''}} value="60">Últimos 60 dias</option>
+                </select>
+            </form>
+        </div>
+    </div>
 
 @endsection
 
